@@ -6,20 +6,20 @@ public class DynamicIntArray {
     private int[] array;
 
     public DynamicIntArray(int size) {
-        this.array = createArray(size);
+        this.array = new int[size];
     }
 
     public DynamicIntArray() {
         this.array = new int[0];
     }
 
-    public int[] createArray(int size) {
-        int[] array = new int[size];
-        for (int i=0; i<size; i++) {
-            array[i] = i;
-        }
-        return array;
-    }
+//    public int[] createArray(int size) {
+//        int[] array = new int[size];
+//        for (int i=0; i<size; i++) {
+//            array[i] = i;
+//        }
+//        return array;
+//    }
 
     public void remove(int value) {
         boolean isValueInArray = false;
